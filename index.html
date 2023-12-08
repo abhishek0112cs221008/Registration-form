@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Registration-form" content="IE=7">
+    <title>Registration form</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .fieldset1{
+        margin-left: 400px;
+        width: 900px;
+        padding: 10px;
+        
+    }
+    h1{
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+<form action="../LECTURE1/INDEX.html">
+    <fieldset class="fieldset1">
+        <legend>
+            Personal Information
+        </legend>
+        <table border="1">
+
+            <tr>
+                <td>
+                    <label for="fname">First Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="fname" id="fname" size="25px">
+                </td>
+                <td>
+                    <label for="mname">Middle Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="mname" id="mname" size="25px">
+                </td>
+                <td>
+                    <label for="lname">Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="lname" id="lname" size="25px">
+                </td>
+            </tr>
+
+            <tr>
+                    <td>
+                        <label for="dob">Date of Birth:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob" id="dob">
+                    </td>
+                    <td>
+                        <label for="number">Contact No:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="number" id="number" size="25px">
+                    </td>
+                    <td>
+                        <label for="gmailID">Email Id</label>
+                    </td>
+                    <td>
+                        <input type="email" name="gmailID" id="gmailID" size="25px" placeholder="example@gmail.com">
+                    </td>
+
+            </tr>   
+
+            <tr>
+                <td colspan="6">
+                <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" value="male" id="male" name="radio">
+                <label for="female">Female</label>
+                <input type="radio" value="female" id="female" name="radio">
+                </fieldset>
+                </td>
+            </tr>    
+
+        </table> 
+    
+    </fieldset>
+
+    <fieldset class="fieldset1">
+        <legend>
+            Address Information
+        </legend>  
+        <table border="1">
+        <tr>
+            <td><label for="street">Street:</label></td>
+            <td><input type="text" name="street" id="street" size="25px"></td>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" name="city" id="city" size="25px"></td>
+            <td><label for="state">State:</label></td>
+            <td>
+                <select name="state" id="state">
+                    <option value="MP">MP</option>
+                    <option value="UP">UP</option>
+                    <option value="MH">MH</option>
+                </select>
+            </td>
+            <td><label for="code">Zip Code:</label></td>
+            <td><input type="text" name="code" id="code" size="25px"></td>
+        </tr>  
+        </table>      
+    </fieldset>
+
+    <fieldset class="fieldset1">
+        <legend>
+            Other Information
+        </legend>  
+        <table border="1"> 
+        <tr>
+            
+                <label for="comment" >Comments:</label>
+            
+           
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+           
+          
+                <label for="stat" >I agree to the terms of service:</label>
+         
+           
+                <input type="checkbox" name="stat" id="stat" size="25px">
+           
+        </tr>  
+        </table>   
+    </fieldset>
+
+    <center>
+    <input type="submit" value="Register">
+    </center>
+
+</form>
+</body>
+</html>
